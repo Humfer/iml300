@@ -4,7 +4,7 @@ background-color: black;
  
 }
 .bigger {
-    width: 400px;
+    width: 40%;
     height: 100%;
     border-style: solid;
     border-color: red;
@@ -19,7 +19,7 @@ img {
     transition: width 2s, height 2s;
 }
 .card{
-    width: 20px;
+    width: 20%;
     height: 100%;
     border-style: solid;
     border-color: white;
