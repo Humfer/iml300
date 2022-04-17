@@ -1,15 +1,33 @@
 $(document).ready(function () {
-        $('div.card').click(function(){
-           alert("triggered");
+    $('#aCard').click(function () {
+        //           alert("triggered");
         $(this).toggleClass('bigger');
-        });
-        
-});
-            function openNav() {
-                document.getElementById("myNav").style.width = "30%";
-            }
+        $('.cardName').toggleclass('writing');
 
-            /* Close when someone clicks on the "x" symbol inside the overlay */
-            function closeNav() {
-                document.getElementById("myNav").style.width = "10%";
-            }
+    });
+
+});
+
+function openNav() {
+    document.getElementById("myNav").style.width = "30%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+    document.getElementById("myNav").style.width = "10%";
+}
+//var coll = document.getElementsByClassName("card");
+//var i;
+//
+//for (i = 0; i < coll.length; i++) {
+//  coll[i].addEventListener("click", function() {
+//    this.classList.toggle("bigger");
+//    
+//    var content = this.nextElementSibling;
+//    if (cardContent.style.display === "block") {
+//      cardContent.style.display = "none";
+//    } else {
+//      cardContent.style.display = "block";
+//    }
+//  });
+//}

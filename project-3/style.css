@@ -1,8 +1,7 @@
 body{
  color: white;
-background-color: black;
- 
-}
+background-color: black;}
+
 .bigger {
     width: 40%;
     height: 100%;
@@ -10,7 +9,12 @@ background-color: black;
     border-color: red;
     position: absolute;
     transition: width 2s, height 2s;
-    background-color: red;
+    /*    background-color: red;*/
+}
+
+.writing {
+    writing-mode: vertical-rl;
+    border-style: dashed;
 }
 img {
     width: 150px;
@@ -19,11 +23,15 @@ img {
     transition: width 2s, height 2s;
 }
 .card{
-    width: 20%;
-    height: 100%;
+/*    width: 20%;*/
+    height: 60%;
     border-style: solid;
+    background-color: transparent;
+    color: white;
+/*
     border-color: white;
     position: absolute;
+*/
     transition: width 2s, height 2s;
 }
 .cardName{
@@ -32,4 +40,31 @@ img {
     font-size: 400%;
     text-align:center;
     line-height: 2.5;
+}
+#bCard{
+ margin-left:20%;
+     height: 60%;
+/*  width: 33.333%;*/
+  position: fixed;
+  margin-left: 33.333%;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: 50% 55%;
+}
+#aCard{
+ height: 60%;
+/*  width: 33.333%;*/
+  position: fixed;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: 50% 55%;
+    border-color:red;
+}
+.cardContent{
+    display: none;
+  overflow: hidden;
 }
