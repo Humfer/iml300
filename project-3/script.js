@@ -2,10 +2,26 @@ $(document).ready(function () {
     $('#aCard').click(function () {
         //           alert("triggered");
         $(this).toggleClass('bigger');
-        $('.cardName').toggleclass('writing');
+        $('#aCard').toggleClasslass('writing');
 
     });
-
+    $('#bCard').click(function () {
+        //           alert("triggered");
+        $(this).toggleClass('bigger');
+        $('.cardName').toggleclass('writing');
+    });
+    $('#cCard').click(function () {
+        //           alert("triggered");
+        $(this).toggleClass('bigger');
+        $('.cardName').toggleclass('writing');
+    });
+    $('#dCard').click(function () {
+        //           alert("triggered");
+        $(this).toggleClass('bigger');
+        $('#man-quote').toggleClass('show');
+         $('#man').toggleClass('hide');
+    });
+    
 });
 
 function openNav() {

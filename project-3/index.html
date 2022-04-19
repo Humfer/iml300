@@ -6,30 +6,51 @@
     <title>CHANGE THIS</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<div class = "deck">
-    <button type = "button" id = "aCard" class = "card">
-        <div class = "cardName">
-            Justice
-        </div>
-        <div class = "cardContent">
-            <img src="asset/computer-plant.jpg" alt="">
-        </div>
-    </button>
-    <div id = "bCard" class = "card">
-        <div class = "cardName">
-            Fear
-        </div>
-        <div class = "cardContent">
-            Image
-        </div>
+    <div class="deck">
+        <button type="button" id="aCard" class="card">
+            <div class="cardName">
+                Justice
+            </div>
+            <div class="cardContent">
+                <img src="asset/computer-plant.jpg" alt="">
+            </div>
+        </button>
+        <button type="button" id="bCard" class="card">
+            <div class="cardName">
+                Fear
+            </div>
+            <div class="cardContent">
+                Image
+            </div>
+        </button>
+        <button type="button" id="cCard" class="card">
+            <div class="cardName">
+                Freedom
+            </div>
+            <div class="cardContent">
+                Image
+            </div>
+        </button>
+        <button type="button" id="dCard" class="card">
+            <div class="cardName">
+                <h4 id="man">Man</h4>
+                <div class="cardContent" id="man-quote">
+                    <span><i>"No free man shall ever be debarred the use of arms"<br> -Thomas Jefferson</i>
+                        <br>(I want the image to expand when hovered over.)</span>
+                    <a href="man.html"><img src="asset/rambo.jpg" alt="rambo"></a>
+                </div>
+            </div>
+        </button>
+
     </div>
-</div>  
 
 
-
+    <script src="tumble.js"></script>
 </body></html>

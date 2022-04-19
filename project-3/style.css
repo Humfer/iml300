@@ -2,49 +2,64 @@ body{
  color: white;
 background-color: black;}
 
-.bigger {
-    width: 40%;
-    height: 100%;
-    border-style: solid;
-    border-color: red;
-    position: absolute;
-    transition: width 2s, height 2s;
-    /*    background-color: red;*/
 }
-
-.writing {
-    writing-mode: vertical-rl;
-    border-style: dashed;
+.deck{
+    display:contents;
 }
 img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
     transition: width 2s, height 2s;
 }
 .card{
-/*    width: 20%;*/
-    height: 60%;
+    width: 20%;
+    transition: width 2s, height 2s;
+    height: 80%;
     border-style: solid;
     background-color: transparent;
     color: white;
+    position: absolute;
+    top: 0px;
+/*
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+*/
+    border-color:white;
+
 /*
     border-color: white;
     position: absolute;
 */
+    
+}
+.bigger {
     transition: width 2s, height 2s;
+    width: 40%;
+    height: 80%;
+    border-style: solid;
+    position: absolute;
+
+    /*    background-color: red;*/
 }
 .cardName{
     writing-mode: vertical-rl;
     inline-size: 100%;
     font-size: 400%;
     text-align:center;
-    line-height: 2.5;
+    width: 100%;
+    justify-content: center;
+    transition: width 2s, height 2s
+}
+.writing {
+    transition: width 2s, height 2s;
+    writing-mode: horizontal-tb;
+    border-style: dashed;
+    display:block;
 }
 #bCard{
  margin-left:20%;
-     height: 60%;
+/*     height: 60%;*/
 /*  width: 33.333%;*/
+/*
   position: fixed;
   margin-left: 33.333%;
   top: 0px;
@@ -52,19 +67,49 @@ img {
   flex-direction: column;
   justify-content: center;
   background-position: 50% 55%;
+*/
 }
-#aCard{
- height: 60%;
-/*  width: 33.333%;*/
-  position: fixed;
-  top: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-position: 50% 55%;
-    border-color:red;
+#cCard{
+ margin-left:40%
+}
+#dCard{
+ margin-left:60%
 }
 .cardContent{
     display: none;
   overflow: hidden;
+}
+.show{
+    display:inline;
+}
+#man-quote span{
+    writing-mode: horizontal-tb;
+    font-size: 10px;
+}
+cardName h4{
+    display: inline;
+}
+.hide{
+    writing-mode: horizontal-tb;
+    position:absolute;
+    top: 0;
+    width:100%;
+    text-align: center;
+}
+.cardContent img{
+    width:50%;
+    height: auto;
+    
+}
+/*-------Man-page-----*/
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.after{
+position: relative;
+    top: 100%;
 }
