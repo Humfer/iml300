@@ -3,6 +3,9 @@ body{
 background-color: black;}
 
 }
+canvas {
+  display: block;
+}
 .deck{
     display:contents;
 }
@@ -110,6 +113,6 @@ cardName h4{
   min-height: 100%;
 }
 .after{
-position: relative;
+position: absolute;
     top: 100%;
 }
