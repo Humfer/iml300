@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('#aCard').click(function () {
         //           alert("triggered");
-        $(this).toggleClass('bigger');
+        $(this).toggleClass('smaller');
         $('#aCard').toggleClasslass('writing');
 
     });
@@ -21,8 +21,14 @@ $(document).ready(function () {
         $('#man-quote').toggleClass('show');
          $('#man').toggleClass('hide');
     });
+    $('#eCard').click(function () {
+        //           alert("triggered");
+        $(this).toggleClass('bigger');
+        $('.cardName').toggleclass('writing');
+    });
     
 });
+
 
 function openNav() {
     document.getElementById("myNav").style.width = "30%";

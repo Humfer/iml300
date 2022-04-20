@@ -11,7 +11,7 @@ let tumbles = []; //array of tumbles
 var canvas;
 
 function setup() {
-  canvas = createCanvas(windowWidth, windowHeight);
+  canvas = createCanvas(windowWidth, windowHeight*1.05);
   canvas.position(0,0);
 canvas.style('z-index', '-1');
   //creating different tumbleweeds. You can play with the number of tumbleweeds by changing the inequality on second i. 
@@ -37,7 +37,7 @@ class Weed {
     //sets a gravity for the y, gravity does not apply to x
     this.gravity = createVector(0, 0.2);
     //sets the speed at which the weed is moving right
-    this.speed = createVector(3, 0);
+    this.speed = createVector(3.5, 0);
   }
   move() {
     // the gravity is added to speed to make the tumbleweed drop at the rate of gravity

@@ -1,31 +1,29 @@
 body{
  color: white;
-background-color: black;}
-
+background-color: black;
+overflow:scroll;
 }
 canvas {
   display: block;
 }
 .deck{
-    display:contents;
+/*    display:contents;*/
+/*    overflow: scroll;*/
+/*    width: 100%;*/
+    display: flex;
 }
 img {
     transition: width 2s, height 2s;
 }
 .card{
-    width: 20%;
+    width: 200px;
     transition: width 2s, height 2s;
     height: 80%;
     border-style: solid;
     background-color: transparent;
     color: white;
-    position: absolute;
-    top: 0px;
-/*
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-*/
+/*    position: absolute;*/
+    top: 10px;
     border-color:white;
 
 /*
@@ -36,10 +34,10 @@ img {
 }
 .bigger {
     transition: width 2s, height 2s;
-    width: 40%;
+    width: 400px;
     height: 80%;
     border-style: solid;
-    position: absolute;
+/*    position: absolute;*/
 
     /*    background-color: red;*/
 }
@@ -50,7 +48,9 @@ img {
     text-align:center;
     width: 100%;
     justify-content: center;
-    transition: width 2s, height 2s
+    transition: width 2s, height 2s;
+    display: flex;
+    align-items: center;
 }
 .writing {
     transition: width 2s, height 2s;
@@ -58,25 +58,17 @@ img {
     border-style: dashed;
     display:block;
 }
-#bCard{
- margin-left:20%;
-/*     height: 60%;*/
-/*  width: 33.333%;*/
-/*
-  position: fixed;
-  margin-left: 33.333%;
-  top: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-position: 50% 55%;
-*/
+#aCard{
+    transition: width 2s, height 2s;
+    width: 400px;
+    height: 80%;
+    border-style: solid;
 }
-#cCard{
- margin-left:40%
-}
-#dCard{
- margin-left:60%
+.smaller{
+    transition: width 2s, height 2s;
+    height: 80%;
+    border-style: solid;
+    width: 200px;
 }
 .cardContent{
     display: none;
@@ -94,16 +86,30 @@ cardName h4{
 }
 .hide{
     writing-mode: horizontal-tb;
-    position:absolute;
+    position:relative;
     top: 0;
     width:100%;
     text-align: center;
 }
+
 .cardContent img{
-    width:50%;
-    height: auto;
-    
+    height: 80%;
 }
+.index-intro{
+    padding-left: 2%;
+    top:100%;
+    position: absolute;
+}
+.index-intro h1{
+    font-size: 5vw;
+}
+#static{
+    position: absolute;
+    top: 100%;
+    right: -10px;
+    width: 40%
+}
+
 /*-------Man-page-----*/
 #myVideo {
   position: absolute;
