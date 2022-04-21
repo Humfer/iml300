@@ -20,6 +20,7 @@ $(document).ready(function () {
         $(this).toggleClass('bigger');
         $('#man-quote').toggleClass('show');
          $('#man').toggleClass('hide');
+//        $('#main-title del').toggleClass('show');
     });
     $('#eCard').click(function () {
         //           alert("triggered");
