@@ -1,53 +1,60 @@
-body{
- color: white;
-background-color: black;
-overflow:scroll;
+body {
+    color: white;
+    background-color: black;
+    overflow: scroll;
 }
+
 canvas {
-  display: block;
+    display: block;
 }
-.deck{
-/*    display:contents;*/
-/*    overflow: scroll;*/
+
+.deck {
+    /*    display:contents;*/
+    /*    overflow: scroll;*/
     width: max-content;
     display: flex;
 }
+
 img {
     transition: width 2s, height 2s;
 }
-.card{
+
+.card {
     width: 200px;
     transition: width 2s, height 2s;
     height: 80%;
     border-style: solid;
     background-color: transparent;
     color: white;
-/*    position: absolute;*/
+    /*    position: absolute;*/
     top: 10px;
-    border-color:white;
+    border-color: white;
 
-/*
+    /*
     border-color: white;
     position: absolute;
 */
-    
+
 }
+
 .bigger {
     transition: width 2s, height 2s;
     width: 400px;
     height: 80%;
     border-style: solid;
-/*    position: absolute;*/
+    /*    position: absolute;*/
 
     /*    background-color: red;*/
 }
-.smaller{
+
+.smaller {
     transition: width 2s, height 2s;
     height: 80%;
     border-style: solid;
     width: 200px;
 }
-.cardName{
+
+.cardName {
     writing-mode: vertical-rl;
     inline-size: 100%;
     font-size: 400%;
@@ -57,83 +64,106 @@ img {
     display: flex;
     align-items: center;
 }
+
 .writing {
     transition: width 2s, height 2s;
     writing-mode: horizontal-tb;
     border-style: dashed;
-    display:block;
+    display: block;
 }
-#aCard{
+
+#aCard {
     transition: width 2s, height 2s;
     width: 400px;
     height: 80%;
     border-style: solid;
 }
-.cardContent{
+
+.cardContent {
     display: none;
-  overflow: hidden;
+    overflow: hidden;
 }
-.show{
-    display:inline;
+
+.show {
+    display: inline;
 }
-#man-quote span{
+
+.cardContent span {
     writing-mode: horizontal-tb;
     font-size: 10px;
 }
-cardName h4{
+
+cardName h4 {
     display: inline;
 }
-.hide{
+
+.hide {
     writing-mode: horizontal-tb;
-    position:relative;
+    position: relative;
     top: 0;
-    width:100%;
+    width: 100%;
     text-align: center;
 }
 
-.cardContent img{
+.cardContent img {
     height: 80%;
 }
-.index-intro{
+
+.index-intro {
     padding-left: 2%;
-    top:100%;
+    top: 100%;
     position: absolute;
 }
-.index-intro h1{
+
+.index-intro h1 {
     font-size: 5vw;
 }
-#static{
+
+#static {
     position: absolute;
     top: 100%;
     right: -10px;
     width: 40%
 }
-#main-title{
+
+#main-title {
     writing-mode: horizontal-tb;
-    width: 80%;
+    width: 300px;
     transition: width 2s, height 2s;
     display: flex;
+    position: absolute;
     align-items: center;
-    height:100%;
-    line-height: 1.6
-}
-#main-title del{
-    display: none;
+    height: 100%;
+    line-height: 1.6;
+    left: 80px;
+    top: -110px;
 }
 
-.cardName h4:hover{
+.strike {
+    position: absolute;
+    top: 400px;
+    display: inline;
+
+}
+
+.title-show {
+  text-decoration: line-through;
+}
+
+.cardName h4:hover {
     color: greenyellow;
 }
 
 /*-------Man-page-----*/
 #myVideo {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
-.after{
-position: absolute;
+
+.after {
+    position: absolute;
     top: 100%;
 }

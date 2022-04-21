@@ -8,26 +8,32 @@ $(document).ready(function () {
     $('#bCard').click(function () {
         //           alert("triggered");
         $(this).toggleClass('bigger');
+        $('.strike').toggleClass('title-show');
+       $('#justice').toggleClass('hide'); 
+        $('#justice-quote').toggleClass('show');
         $('.cardName').toggleclass('writing');
+
     });
     $('#cCard').click(function () {
         //           alert("triggered");
         $(this).toggleClass('bigger');
+        $('.strike').toggleClass('title-show');
         $('.cardName').toggleclass('writing');
     });
     $('#dCard').click(function () {
         //           alert("triggered");
         $(this).toggleClass('bigger');
         $('#man-quote').toggleClass('show');
-         $('#man').toggleClass('hide');
-//        $('#main-title del').toggleClass('show');
+        $('#man').toggleClass('hide');
+        $('.strike').toggleClass('title-show');
     });
     $('#eCard').click(function () {
         //           alert("triggered");
         $(this).toggleClass('bigger');
         $('.cardName').toggleclass('writing');
+         $('.strike').toggleClass('title-show');
     });
-    
+
 });
 
 
