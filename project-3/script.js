@@ -33,6 +33,11 @@ $(document).ready(function () {
         $('.cardName').toggleclass('writing');
          $('.strike').toggleClass('title-show');
     });
+    $('.menu-button').click(function () {
+        $(this).toggleClass('open');
+        $('.menu').toggleClass('open');
+        $('.menu-bg').toggleClass('cover');
+    });
 
 });
 
