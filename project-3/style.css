@@ -1,9 +1,16 @@
+@font-face {
+    src: url('fonts/Brief-River.woff'); format('woff');
+    font-family: serif;
+}
+
 body {
     color: white;
     background-color: black;
     overflow: scroll;
 }
-
+ html, body{
+     cursor: url("asset/cursor-_1_.png"), default;
+}
 canvas {
     display: block;
 }
@@ -29,6 +36,7 @@ img {
     /*    position: absolute;*/
     top: 10px;
     border-color: white;
+     cursor: url("asset/cursor-_1_.png"), default;
 
     /*
     border-color: white;
@@ -63,6 +71,7 @@ img {
     transition: width 2s, height 2s;
     display: flex;
     align-items: center;
+    font-family: 'Brief-River';
 }
 
 .writing {
@@ -106,7 +115,8 @@ cardName h4 {
 }
 
 .cardContent img {
-    height: 80%;
+    /*    height: 80%;*/
+    height: 400px;
 }
 
 .index-intro {
@@ -147,7 +157,7 @@ cardName h4 {
 }
 
 .title-show {
-  text-decoration: line-through;
+    text-decoration: line-through;
 }
 
 .cardName h4:hover {
@@ -166,4 +176,8 @@ cardName h4 {
 .after {
     position: absolute;
     top: 100%;
+}
+.explanation{
+    font-size: 3vh;
+    line-height: 1.2;
 }
