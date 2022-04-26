@@ -11,14 +11,15 @@ $(document).ready(function () {
         $('.strike').toggleClass('title-show');
        $('#justice').toggleClass('hide'); 
         $('#justice-quote').toggleClass('show');
-        $('.cardName').toggleclass('writing');
+//        $('.cardName').toggleclass('writing');
 
     });
     $('#cCard').click(function () {
         //           alert("triggered");
         $(this).toggleClass('bigger');
         $('.strike').toggleClass('title-show');
-        $('.cardName').toggleclass('writing');
+       $('#fear').toggleClass('hide'); 
+        $('#fear-quote').toggleClass('show');
     });
     $('#dCard').click(function () {
         //           alert("triggered");
@@ -30,8 +31,9 @@ $(document).ready(function () {
     $('#eCard').click(function () {
         //           alert("triggered");
         $(this).toggleClass('bigger');
-        $('.cardName').toggleclass('writing');
-         $('.strike').toggleClass('title-show');
+        $('#freedom-quote').toggleClass('show');
+        $('#freedom').toggleClass('hide');
+        $('.strike').toggleClass('title-show');
     });
     $('.menu-button').click(function () {
         $(this).toggleClass('open');

@@ -1,23 +1,30 @@
 @font-face {
-    src: url('fonts/Brief-River.woff'); format('woff');
+    src: url('fonts/Brief-River.woff');
+    format('woff');
     font-family: serif;
 }
+
 a {
     text-decoration: none;
     color: white;
 }
+
 a:hover {
     color: greenyellow;
     cursor: url("asset/cursor-_2_.png"), default;
 }
+
 body {
     color: white;
     background-color: black;
     overflow: scroll;
 }
- html, body{
-     cursor: url("asset/cursor-_1_.png"), default;
+
+html,
+body {
+    cursor: url("asset/cursor-_1_.png"), default;
 }
+
 canvas {
     display: block;
 }
@@ -43,7 +50,7 @@ img {
     /*    position: absolute;*/
     top: 10px;
     border-color: white;
-     cursor: url("asset/cursor-_1_.png"), default;
+    cursor: url("asset/cursor-_1_.png"), default;
 
     /*
     border-color: white;
@@ -80,7 +87,8 @@ img {
     align-items: center;
     font-family: 'Brief-River';
 }
-.cardName h4{
+
+.cardName h4 {
     cursor: url("asset/cursor-_2_.png"), default;
 }
 
@@ -96,7 +104,7 @@ img {
     width: 400px;
     height: 80%;
     border-style: solid;
-    color:greenyellow;
+    color: greenyellow;
 }
 
 .cardContent {
@@ -105,12 +113,13 @@ img {
 }
 
 .show {
-    display: inline;
+    display: inline-table;
 }
 
 .cardContent span {
     writing-mode: horizontal-tb;
-    font-size: 10px;
+    font-size: 17px;
+    width: 25%;
 }
 
 cardName h4 {
@@ -128,9 +137,11 @@ cardName h4 {
 .cardContent img {
     /*    height: 80%;*/
     height: 400px;
-     cursor: url("asset/cursor-_2_.png"), default;
+    cursor: url("asset/cursor-_2_.png"), default;
 }
-
+.cardContent img:hover{
+    height:421px;
+}
 .index-intro {
     padding-left: 2%;
     top: 100%;
@@ -175,6 +186,7 @@ cardName h4 {
 .cardName h4:hover {
     color: greenyellow;
 }
+
 nav {
     position: absolute;
     top: 0;
@@ -187,17 +199,34 @@ nav {
     right: 30px;
     width: 60px;
     height: 60px;
-    border: solid 2px white;
+    border: solid 2px greenyellow;
     border-radius: 50%;
     z-index: 100;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     cursor: url("asset/cursor-_2_.png"), default;
-    
+
+}
+
+.line {
+    border-bottom: solid 4px greenyellow;
+    height: 4%;
+    width: 90px;
+    right: 15px;
+    position: fixed;
+}
+.vertical-line{
+    border-left: solid 4px greenyellow;
+    height: 90px;
+    top: 20px;
+    width: 1px;
+    right: 60px;
+    display: block;
+    position: fixed;       
 }
 
 .menu-button.open {
-    border: solid 2px white;
+    border: solid 4px greenyellow;
     cursor: url("asset/cursor-_2_.png"), default;
 }
 
@@ -224,9 +253,9 @@ nav {
     top: 40%;
     left: 47%;
     transform: translate(-50%, -50%);
-     padding: 120px 50px;
+    padding: 120px 50px;
     border-style: dashed;
-    border-color:greenyellow;
+    border-color: greenyellow;
 }
 
 .menu li {
@@ -240,12 +269,18 @@ nav {
     left: 0;
     width: 100vw;
     height: 100vh;
-/*    background: black;*/
-    opacity: 0.5;
+    /*    background: black;*/
+    opacity: 1;
     z-index: -20;
-    
-}
 
+}
+#header{
+    font-size: 4vw;
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 10px;
+}
 /*-------Man-page-----*/
 #myVideo {
     position: absolute;
@@ -259,7 +294,9 @@ nav {
     position: absolute;
     top: 100%;
 }
+
 .explanation {
     font-size: 3vh;
     line-height: 1.2;
+    width:97%
 }
