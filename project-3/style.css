@@ -18,11 +18,13 @@ body {
     color: white;
     background-color: black;
     overflow: scroll;
+    font-family: 'Patua One', cursive;
 }
 
 html,
 body {
     cursor: url("asset/cursor-_1_.png"), default;
+    
 }
 
 canvas {
