@@ -138,11 +138,11 @@ cardName h4 {
 
 .cardContent img {
     /*    height: 80%;*/
-    height: 400px;
+    height: 380px;
     cursor: url("asset/cursor-_2_.png"), default;
 }
 .cardContent img:hover{
-    height:420px;
+    height:410px;
 }
 .index-intro {
     padding-left: 2%;
