@@ -142,7 +142,7 @@ cardName h4 {
     cursor: url("asset/cursor-_2_.png"), default;
 }
 .cardContent img:hover{
-    height:421px;
+    height:420px;
 }
 .index-intro {
     padding-left: 2%;
