@@ -1,0 +1,46 @@
+body {
+    background-color: #8A9287;
+    color: #243128;
+
+    font-family: 'Dokdo', cursive;
+    font-size: 2vw;
+    text-align: center;
+    */
+}
+
+.homepage h1 {
+    /*    color:#89001C;*/
+    font-size: 5vw;
+    font-style: italic;
+    letter-spacing: 80px;
+    font-family: 'Rubik Glitch', cursive;
+}
+
+.homepage h2 {
+    font-size: 5vw;
+}
+
+img {
+    border: 5px solid #89001C;
+    box-shadow: 0 0 20px #603139;
+}
+
+li {
+    list-style-type: none;
+    position: relative;
+    left: -1.5vw;
+}
+
+li p {
+    border: solid 2px #B5B8AF;
+    padding: 10px 10px; 
+    text-align: left;
+}
+
+a {
+    font-size: 3vw;
+    color: #D2D2CA;
+}
+footer{
+    font-size: 4vw;
+}
