@@ -302,3 +302,20 @@ nav {
     line-height: 1.2;
     width:97%
 }
+.moviename {
+    position:absolute;
+    text-align:right;
+    top: 1%;
+    width: 98%;
+}
+.poster img{
+    width: 20%;
+    height: 400px;
+    display: inline;
+    padding: 10px 30px;
+    margin-left:7%;
+}
+
+.inside {
+  font-size: 3vh;
+}
