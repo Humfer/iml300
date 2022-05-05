@@ -319,8 +319,9 @@ nav {
 .inside {
   font-size: 3vh;
 }
+/*
 :root {
-/*  cursor: none;*/
+  cursor: none;
   --cursorX: 50vw;
   --cursorY: 50vh;
 }
@@ -338,3 +339,4 @@ nav {
     rgba(0,0,0,.95) 100%
   )
 }
+*/
